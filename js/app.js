@@ -8,7 +8,7 @@ app.config(function($routeProvider){
 	.when('/first', {
 		templateUrl: 'first.html'
 	})
-	.when('#/second', {
+	.when('/second', {
 		templateUrl: 'third.html'
 	})
 	.otherwise({
