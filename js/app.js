@@ -1,17 +1,17 @@
-var app = angular.module('myApp',[ngRoute])
+var app = angular.module('myApp',['ngRoute'])
 
 app.config(function($routeProvider){
 	$routeProvider
-	.when('/', {
-		templateUrl: 'index.html'
+	.when('/home', {
+		templateUrl: 'home.html'
 	})
 	.when('/first', {
 		templateUrl: 'first.html'
 	})
-	.when('/second', {
+	.when('/third', {
 		templateUrl: 'third.html'
 	})
 	.otherwise({
-		redirectTo: '/'
+		redirectTo: '/home'
 	})
 })
